@@ -1,0 +1,24 @@
+{
+  "name": "languages-search",
+  "version": "1.0.0",
+  "description": "languages-search",
+  "main": "index.js",
+  "dependencies": {
+    "nodemon": "^1.18.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "tape public/test.js",
+    "dev": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FACK1/languages-search.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FACK1/languages-search/issues"
+  },
+  "homepage": "https://github.com/FACK1/languages-search#readme"
+}
