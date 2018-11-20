@@ -1,0 +1,29 @@
+*{
+  margin:0px;
+  padding:20px;
+}
+
+body {
+  background-image: url("https://www.warrick.k12.in.us/Schools/castle/img/academics/languages/language_logo.jpg");
+}
+
+.header{
+text-align: center;
+margin:120px;
+height: 40%;
+
+
+
+}
+#event-on-text{
+width: 40%;
+height: 25px;
+
+
+}
+
+h1{
+
+background-color:rgba(255,255,255,0.5)
+
+}
