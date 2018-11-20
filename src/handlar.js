@@ -4,6 +4,7 @@ const fs = require('fs');
 
 function handler(request, response){
     var endpoint = request.url;
+    console.log(endpoint);
      if(endpoint === '/'){
              const htmlPath =  path.join(__dirname, '../public/index.html')
              fs.readFile(htmlPath, (error, html) => {
@@ -15,7 +16,7 @@ function handler(request, response){
                  response.end(html)
              })
          }else if(endpoint.includes('/public/')){
-             const filePath =  path.join(__dirname, '..', request.url);             
+             const filePath =  path.join(__dirname, '..', request.url);
              const extension = request.url.split('.')[1];
              const contentTypeMapping = {
                 'js': 'application/js',
@@ -32,12 +33,12 @@ function handler(request, response){
             })
          }
          else if(endpoint==='/search'){
- 
+
          }
          else {
              response.writeHead(404, {'Content-Type': 'text/html'})
              response.end('<h1>Page Not Found</h1>')
-         }      
+         }
  }
 
 
