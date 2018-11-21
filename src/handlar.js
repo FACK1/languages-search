@@ -46,7 +46,7 @@ function handler(request, response){
              var arrayoflang=[]
              arrayoflang=  data.toString().toLowerCase().split('\n');
              var JSONResults = JSON.stringify(arrayoflang);
-             
+
              response.writeHead(200,{"content-type":"text/javascript"});
              response.end(JSONResults);
            })
