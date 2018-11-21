@@ -4,28 +4,40 @@
 }
 
 body {
-  background-image: url("https://www.warrick.k12.in.us/Schools/castle/img/academics/languages/language_logo.jpg");
+ background-image: url("https://www.warrick.k12.in.us/Schools/castle/img/academics/languages/language_logo.jpg");
 }
 
 .header{
-text-align: center;
-margin:120px;
-height: 40%;
-
-
-
+  text-align: center;
+  height: 40%;
 }
+
 #event-on-text{
-width: 40%;
-height: 25px;
-
-
+  width: 40%;
+  height: 25px;
 }
 
-h1{
+input[type=text] {
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  color: black;
+  font-size	:20px;
+  text-align: center;
+}
 
-background-color:rgba(255,255,255,0.5)
+section{
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 12px;
+}
 
+.licss{
+  width: 50%;
+  border-radius: 12px;
+  margin: auto;
+  color: white;
+  list-style-type: none;
+  font-size: 40px;
+  text-align: center;
 }
 
 @media only screen and (max-width: 600px) {
