@@ -9,7 +9,8 @@
   "devDependencies": {},
   "scripts": {
     "test": "tape public/test.js",
-    "dev": "nodemon src/server.js"
+    "start": "node src/server.js",
+    
   },
   "repository": {
     "type": "git",
