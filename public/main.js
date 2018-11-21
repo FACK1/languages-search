@@ -3,7 +3,6 @@ function event1() {
 
 fetch('/search?query='+text)
 .then(response => {
-
 return response.json();
 })
 .then(function (data){
@@ -24,5 +23,19 @@ for (var i = 0; i < data.length; i++) {
 console.log(arrayofres);
 
 
-})
+    var ul = document.createElement("ul");
+    ul.setAttribute('id', 'ulid');
+    for (var i =0; i < arrayofres.length; i++){
+    var li = document.createElement("li");
+    var valueofarray=document.createTextNode(arrayofres[i]);
+    li.appendChild(valueofarray);
+    ul.appendChild(li);
+  }
+  var sec=document.getElementById("section-res");
+  sec.innerHTML="";
+  sec.appendChild(ul)
+
+});
+
+
 }
