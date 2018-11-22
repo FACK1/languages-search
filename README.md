@@ -28,12 +28,19 @@ At the end of our project we discovered that the data we had sent back to us was
 ### How to run our site on your machine?
 
 1- Clone this repo.
+
 2- Open your command line, and navigate to this project's folder.
+
 3- Type in: **npm install**.
+
 4- Then: **npm init**. Press enter on everything, this isn't very important to know (to you).
+
 5- Then type in: **node src/server.js** to run the server. You should get a msg that tells that the server is running on port 9000.
+
 6- Open your browser and type in: **localhost:9000**. Press enter.
+
 7- Your browser should display our site!
+
 8- Now type in any character you want. (a) for example, and see the tope five results that correspond to this letter display on your screen!
 
 
