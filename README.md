@@ -10,11 +10,11 @@ It's a webapp that enables the user to look for languages that correspond to a c
 2- Get the first five results corresponding to it. 
 
 ### File Structure.
-**Public.
+**Public**
 
 1- index.html, main.css, main.js and test.js.
 
-**Src
+**Src**
 2-server.js, handler.js, router.js and the txt file of data. 
 
 ### Work Plan
