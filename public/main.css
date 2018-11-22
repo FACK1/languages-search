@@ -5,7 +5,11 @@
 
 body {
  background-image: url("https://www.warrick.k12.in.us/Schools/castle/img/academics/languages/language_logo.jpg");
+background-size: cover;
+
 }
+
+
 
 .header{
   text-align: center;
