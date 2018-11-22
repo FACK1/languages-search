@@ -1,6 +1,6 @@
 const http = require('http');
 const router = require('./rauter.js');
-const PORT = 9000;
+const PORT =  process.env.PORT ||9000;
 const server = http.createServer(router);
 
 server.listen(PORT, function(){
