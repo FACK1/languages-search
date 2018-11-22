@@ -7,13 +7,13 @@ function event1() {
     .then(function (data){
 
       let arrayofres = findMatch(data, text)
-    
+
         console.log(arrayofres);
         var ul = document.createElement("ul");
         ul.setAttribute('id', 'ulid');
         for (var i =0; i < arrayofres.length; i++){
             var li = document.createElement("li");
-            li.setAttribute('class', 'licss');
+            li.setAttribute('class', 'item');
             var valueofarray=document.createTextNode(arrayofres[i]);
             li.appendChild(valueofarray);
             ul.appendChild(li);
@@ -21,6 +21,10 @@ function event1() {
   var sec=document.getElementById("section-res");
   sec.innerHTML="";
   sec.appendChild(ul)
+  if (text=='')
+{
+ul.innerHTML="";
+}
 
 });
 }
@@ -37,7 +41,7 @@ function findMatch(data, text){
             break;
           }
         }
-       } 
+       }
        return arrayofres;
 }
 if (typeof module !== 'undefined') {
