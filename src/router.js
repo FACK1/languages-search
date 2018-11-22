@@ -1,6 +1,6 @@
 const path = require('path');
 const fs = require('fs');
-const handlers=require('./handlar.js')
+const handlers=require('./handler.js')
 
 const router= (request, response)=>{
   var endpoint = request.url;

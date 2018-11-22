@@ -9,9 +9,12 @@
   },
   "devDependencies": {},
   "scripts": {
+
     "test": "tape src/test.js",
     "istanbul": "istanbul cover tape src/test.js",
     "dev": "nodemon src/server.js"
+
+
   },
   "repository": {
     "type": "git",
