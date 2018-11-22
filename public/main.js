@@ -5,10 +5,8 @@ function event1() {
       return response.json();
     })
     .then(function (data){
-
+     console.log(data);
       let arrayofres = findMatch(data, text)
-
-        console.log(arrayofres);
         var ul = document.createElement("ul");
         ul.setAttribute('id', 'ulid');
         for (var i =0; i < arrayofres.length; i++){
@@ -21,6 +19,7 @@ function event1() {
   var sec=document.getElementById("section-res");
   sec.innerHTML="";
   sec.appendChild(ul)
+      
   if (text=='')
 {
 ul.innerHTML="";
@@ -29,6 +28,9 @@ ul.innerHTML="";
 });
 }
 function findMatch(data, text){
+if(typeof text === "string"){
+  text = text.toLowerCase();
+}
   var arrayofres=[];
       var counter=0;
       for (var i = 0; i < data.length; i++) {
