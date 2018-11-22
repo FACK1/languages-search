@@ -42,3 +42,13 @@ At the end of our project we discovered that the data we had sent back to us was
 5- Your browser should display our site!
 
 6- Now type in any character you want. (a) for example, and see the top five results that correspond to this letter display on your screen!
+
+### Our Team Members
+
+1- amanShawar
+
+2- safaaAmro
+
+3- mutazAl-Muhtaseb
+
+4- orjwanAl-Rajaby
