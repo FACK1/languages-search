@@ -1,5 +1,5 @@
-const path = require('path');
-const fs = require('fs');
+let path = require('path');
+let fs = require('fs');
 
 const  homerouterhandler=(request,response)=>{
   const htmlPath =  path.join(__dirname, '../public/index.html')
@@ -30,16 +30,18 @@ const  publichandler=(request,response)=>{
  })
 }
 const searchhandler=(request,response)=>{
-  var endpoint = request.url;
-  console.log(endpoint.split('=')[1]);
+ var endpoint = request.url;
+ console.log(endpoint.split('=')[1]);
 
   var allData = '';
-  request.on('data', function(query) {
-    allData += query;
+request.on('data', function(query) {
+  allData += query;
   })
   request.on('end', function() {
     var filePath = path.join(__dirname, 'languages.txt');
     var data = fs.readFileSync(filePath);
+  
+
     var arrayoflang=[]
     arrayoflang=  data.toString().toLowerCase().split('\n');
     var JSONResults = JSON.stringify(arrayoflang);
@@ -52,5 +54,5 @@ const searchhandler=(request,response)=>{
 module.exports={
   homerouterhandler,
   publichandler,
-  searchhandler,
+    searchhandler,
 };

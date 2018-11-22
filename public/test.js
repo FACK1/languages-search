@@ -1,5 +1,5 @@
-var test=require('tape')
-var Language=require('./main.js')
+let test=require('tape')
+let Language=require('./main.js')
 
 test('testing tape is working',function(t){
   t.equal(2,2,'2=2');
